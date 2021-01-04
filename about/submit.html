@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>About | Hannah Bartolomea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../css/style.css' />
+    <link rel='stylesheet' href='../css/projectPages.css' />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+
+    <style>
+        
+    </style>
+
+</head>
+
+
+
+<body>
+    <!--Header-->
+    <div style="height: 25vw;">
+        <div class="hero-image">
+            <div class="mobileNav">
+                <div class="x-container" onclick="showNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="nav" style="display: none;">
+                    <nav>
+                        <ul>
+                            <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                            <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                            <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                            <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="desktopNav">
+                <nav>
+                    <ul>
+                        <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                        <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                        <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                        <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <header>Thank You!</header>
+        </div>
+    </div>
+
+
+    <div class="center about-section" style="padding-bottom: 0; margin: 15vh 5% 25vh 5%;">
+        <h1 style="font-size: 3vw;">Your email has been sent!</h1>
+        <h1 style="font-size: 3vw;">I look forward to connecting with you shortly.</h1>
+        <a href="about.html">
+            <button class="aboutButton button button1">  <  Back</button>
+        </a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <span class="sideText" style="float: left; margin: 0 25% 0 0;">Hannah Bartolomea</span>
+            <span class="midText" style="margin: 0 5vw 0 0">Student</span><span class="midText" style="margin: 0 0 0 0">Designer</span><span class="midText" style="margin: 0 0 0 5vw">Developer</span>
+            <span class="sideText" style="float: right; margin: 0 0 0 20%;"><a target="_blank" href="mailto: hbartolo@asu.edu">hbartolo@asu.edu </a></span>
+            <div class="center">
+                <span><a target="_blank" href="https://www.facebook.com/hannah.bartolomea/"><img class="footerImage" src="../images/facebook.png" /></a><a target="_blank" href="https://www.instagram.com/hannahbartolomea/"><img class="footerImage" src="../images/instagram.png" /></a><a target="_blank" href="https://www.linkedin.com/in/hannah-bartolomea-128579173/"><img class="footerImage" src="../images/linkedin.png" /></a><a target="_blank" href="mailto: hbartolo@asu.edu"><img class="footerImage" src="../images/gmail.png" /></a></span>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>function navButton(x) {
+            x.classList.toggle("change");
+        }
+        function showNav() {
+            var x = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }</script>
+
+
+</body>
+</html>

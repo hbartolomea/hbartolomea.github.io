@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Work | Hannah Bartolomea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hannah Bartolomea's professional work as an undergraduate research assistant at Meteor Studio and Embodied Games for Learning Lab at ASU. Some of the highlight projects are Coordinate, JMARS AR, and COVID Campus Simulation.">
+    <link rel='stylesheet' href='../css/style.css' />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+
+
+    <style>
+
+    </style>
+
+</head>
+
+
+
+<body>
+    <!--Header-->
+    <div class="header-box">
+        <div class="hero-image">
+            <div class="mobileNav">
+                <div class="x-container" onclick="showNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="nav" style="display: none;">
+                    <nav>
+                        <ul>
+                            <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                            <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                            <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                            <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="desktopNav">
+                <nav>
+                    <ul>
+                        <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                        <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                        <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                        <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <header>Work</header>
+        </div>
+    </div>
+
+    <!--Recent Work-->
+    <h2>Projects:</h2>
+
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a href="https://xr.asu.edu/covidcampus" target="_blank"><img class="projectPic" src="../images/covid/covidHome.png" alt="Covid Campus Simulation"/></a>
+            </div>
+            <div>
+                <h3 class="projectName" style="text-transform: uppercase;">Covid Campus Simulation</h3>
+                <p class="projectName">Experience how eight key decisions throughout the day change your probability of infection from the COVID-19 virus and learn how you can  prevent the spread of COVID-19 on campus. </p>
+                <span><button onclick="showCovid()" class="button button1" style="margin: 0 1vw 0 5vw;">Show More</button></span>
+                <a href="../projectPages/covid.html">
+                    <span><button class="button button2" style="margin: 0 5vw 0 1vw;">Project Page</button></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="square" id="covidDetail" style="display: none;">
+        <div class="grid-container">
+            <div class="grid-item descTitle item1">COVID Simulation</div>
+            <div class="grid-item item2">
+                <h3 class="workTitle">Goal of Project</h3>
+                <p class="workDesc">The goal of this project was to create a simulation for students to experience how your decisions as a member of the ASU campus community can help to prevent the spread COVID-19.</p>
+            </div>
+            <div class="grid-item item3">
+                <h3 class="workTitle">Project Team</h3>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames"><a href="https://isearch.asu.edu/profile/1154172" target="_blank">Mina C. Johnson Glenberg</a>, Xavier Apostol, Don Balanzat, Hannah Bartolomea, Anoosh Kapadia, Ricardo Nieland Zavala, Auryan Ratliff, Jude Rayan, Hector Taylor</p>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <h3 class="workTitle">My Role</h3>
+                <p class="workDesc">I worked alongside my team to develop a story for the experience, I was also the lead user interface designer and I communicated with a professional UX designer to ensure optimized results.</p>
+            </div>
+            <div class="grid-item item5">
+                <h3 class="workTitle">Project Outcome</h3>
+                <p class="teamNames" style="margin: 2vw 5vw;">The simulation is presented on the <a href="https://xr.asu.edu/" target="_blank">XR@ASU website</a>as a way for students to stay safe on campus.</p>
+            </div>
+            <div class="grid-item item6">
+                <img class="descImage" src="../images/covid/covidChoice.png" alt="Covid Campus Simulation mask"/>
+            </div>
+            <div class="grid-item item7">
+                <img class="descImage" src="../images/covid/covidProb.png" alt="Covid Campus Simualtion probability of infection"/>
+            </div>
+            <div class="grid-item item8">
+                <img class="descImage" src="../images/covid/covidDrag.png" alt="Covid Campus Simualtion feedback" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a href="https://xr.asu.edu/jmars" target="_blank"><img class="iphonePic" src="../images/jmars/jmarsHome.png" alt="JMARS XR" /></a>
+            </div>
+            <div>
+                <h3 class="projectName" style="text-transform: uppercase;">JMARS AR</h3>
+                <p class="projectName">Explore any planetary terrain, from your living room! Prepare terrains in JMARS and export a QR code to view your terrain in AR. Take a screenshot to share your terrain and QR code.</p>
+                <!--<button onclick="showJmars()" class="button button1">Show More</button>-->
+                <span><button onclick="showJmars()" class="button button1" style="margin: 0 1vw 0 5vw;">Show More</button></span>
+                <a href="../projectPages/jmars.html">
+                    <span><button class="button button2" style="margin: 0 5vw 0 1vw;">Project Page</button></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="square" id="jmarsDetail" style="display: none;">
+        <div class="grid-container">
+            <div class="grid-item descTitle item1">JMARS AR</div>
+            <div class="grid-item item2">
+                <h3 class="workTitle">Goal of Project</h3>
+                <p class="workDesc">The goal is for JMARS users to prepare 3D terrains through the Java Mission-planning and Analysis for Remote Sensing (JMARS) application, and view them in AR and VR.
+            </div>
+            <div class="grid-item item3">
+                <h3 class="workTitle">Project Team</h3>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames"><span class="nameDesc">JMARS Information System:</span> <a href="https://jmars.mars.asu.edu/" target="_blank">JMARS Team</a></p>
+                    <p class="teamNames"><span class="nameDesc">Lead AR Programmers:</span><a href="http://lauren-gold.com/" target="_blank">Lauren Gold</a><a href="https://isearch.asu.edu/profile/3025945" target="_blank"> Robert LiKamWa</a></p>
+                    <p class="teamNames"><span class="nameDesc">Planetary Science Lead:</span> Kathryn Powell</p>
+                    <p class="teamNames"><span class="nameDesc">Undergraduate Programmers:</span> Shaun Xiong, Justin Hertzberg, Alexander Gonzalez</p>
+                    <p class="teamNames"><span class="nameDesc">UI Design:</span> Hannah Bartolomea</p>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <h3 class="workTitle">My Role</h3>
+                <p class="workDesc">I was responsible for creating a pattern library, creating a prototype and implementing the design, and iterating design based on user studies.</p>
+            </div>
+            <div class="grid-item item5">
+                <h3 class="workTitle">Project Outcome</h3>
+                <p>
+                    The mobile application is available on the google play and apple app store where users can explore any planetary terrain, from thier living room! Prepare terrains in JMARS and export a QR code to view your terrain in AR. Take a screenshot to share your terrain and QR code.
+
+                </p>
+            </div>
+            <div class="grid-item item6">
+                <img class="descImageIphone" src="../images/jmars/jmarsQR.png" alt="JMARS XR QR Scanner"/>
+            </div>
+            <div class="grid-item item7">
+                <img class="descImageIphone" src="../images/jmars/jmarsCloseUp.png" alt="JMARS XR terrain" />
+            </div>
+            <div class="grid-item item8">
+                <img class="descImageIphone" src="../images/jmars/jmarsHome.png" alt="JMARS XR"/>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a href="https://meteor.ame.asu.edu/" target="_blank"><img class="projectPic" id="meteorPic" src="../images/meteorSite/meteorHome.png" alt="Meteor Studio Website"/></a>
+            </div>
+            <div>
+                <h3 class="projectName" style="text-transform: uppercase;">Meteor Studio Website</h3>
+                <p class="projectName">This website is designed to showcase Meteor Studio, an engineering research labratory at Arizona State University.</p>
+                <button onclick="showMeteor()" class="button button1">Show More</button>
+            </div>
+        </div>
+    </div>
+    <div class="square" id="meteorDetail" style="display: none;">
+        <div class="grid-container">
+            <div class="grid-item descTitle item1">Meteor Studio Website</div>
+            <div class="grid-item item2">
+                <h3 class="workTitle">Goal of Project</h3>
+                <p class="workDesc">The goal of this project was to create a website that is used to advertise Meteor Studio and show progess. The site is meant to showcase students, projects, research, and news.</p>
+            </div>
+            <div class="grid-item item3">
+                <h3 class="workTitle">Project Team</h3>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames workDesc"><a href="https://ldnguyen.com/" target="_blank">Linda Nguyen</a>, Hannah Bartolomea, Schuyler Schanberger, <a href="https://isearch.asu.edu/profile/3025945" target="_blank"> Robert LiKamWa</a></p>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <h3 class="workTitle">My Role</h3>
+                <p class="workDesc">I was responsible for filling content of the website and making it responsive to different screen sizes.</p>
+            </div>
+            <div class="grid-item item5">
+                <h3 class="workTitle">Project Outcome</h3>
+                <p>The website is currently used by Meteor Studio as the main space for information and advertising.</p>
+            </div>
+            <div class="grid-item item6">
+                <img class="descImage" src="../images/meteorSite/meteorTeam.png" alt="Meteor Studio team page"/>
+            </div>
+            <div class="grid-item item7">
+                <img class="descImage" src="../images/meteorSite/meteorAbout.png" alt="Meteor Studio about page" />
+            </div>
+            <div class="grid-item item8">
+                <img class="descImage" src="../images/meteorSite/meteorProjects.png" alt="Meteor Studio projects page"/>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9155155" target="_blank"><img class="projectPic" src="../images/CAM/catchAMimicHome.png" /></a>
+                <!--<div style="height: 30vw;">-->
+                <!--<img class="projectPic" id="cropped" style="align-content:flex-end;" src="../images/ButterflyPaper.png" />-->
+            </div>
+            <div>
+                <h3 class="projectName" style="">Embodied Agentic STEM Education: Effects of 3D VR Compared to 2D PC</h3>
+                <p class="projectName">This randomized control trial determined how two levels of embodiment (low versus high) and platform (2D PC versus 3D Virtual Reality) affected learning in an interactive game about Batesian Mimicry.</p>
+                <span><button onclick="showEgl()" class="button button1" style="margin: 0 1vw 0 5vw;">Show More</button></span>
+                <a href="../projectPages/eglPaper.html">
+                    <span><button class="button button2" style="margin: 0 5vw 0 1vw;">Project Page</button></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="square" id="eglDetail" style="display: none;">
+        <div class="grid-container">
+            <div class="grid-item descTitle item1">Platform is not Destiny</div>
+            <div class="grid-item item2">
+                <h3 class="workTitle">Goal of Project</h3>
+                <p class="workDesc">The objective of this study is to determine how levels of embodiment might affect learning on two different platforms.</p>
+            </div>
+            <div class="grid-item item3">
+                <h3 class="workTitle">Project Team</h3>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames workDesc"><a href="https://isearch.asu.edu/profile/1154172" target="_blank">Mina C. Johnson</a>, Vanessa Ly, Man Su, Ricardo Nieland Zavala, Hannah Bartolomea, Elena Kalina</p>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <h3 class="workTitle">My Role</h3>
+                <p class="workDesc">I worked with my research professor to design 10 item pre, post, and follow up tests. I also was responsible to run over 4 user studies per week and work with the team to synthesize results.</p>
+            </div>
+            <div class="grid-item item5">
+                <h3 class="workTitle">Project Outcome</h3>
+                <p>Data collected indicated a main effect of embodiment and an interaction of embodiment by platform. This showed that active embodiment groups learned more content and that the low embodied VR group learned the least while the high embodied VR group learned the most.</p>
+            </div>
+            <div class="grid-item item6">
+                <img class="descImage" src="../images/CAM/postTest.png" alt="Catch a Mimic survey questions"/>
+            </div>
+            <div class="grid-item item7" style="height: 14.4vw;">
+                <img class="descImage" id="cropped" style="align-content:flex-end;" src="../images/CAM/ButterflyPaper.png" alt="Catch a Mimic paper" />
+            </div>
+            <div class="grid-item item8">
+                <img class="descImage" src="../images/CAM/graph.png" alt="Platform is not Destiny Results" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a href="https://meteor.ame.asu.edu/coordinate/" target="_blank"><img class="projectPic" src="../images/coordinateGif.gif" alt="Coordinate AR" /></a>
+            </div>
+            <div style="align-self: center;">
+                <h3 class="projectName" style="text-transform: uppercase;">Coordinate AR</h3>
+                <p class="projectName">Coordinate a spreadsheet-programmable visualization framework for immersive map visualizations through augmented reality (AR) that provides interactive digital information overlays atop physical maps.</p>
+                <button onclick="showCoordinate()" class="button button1">Show More</button>
+            </div>
+        </div>
+    </div>
+    <div class="square" id="coordinateDetail" style="display: none;">
+        <div class="grid-container">
+            <div class="grid-item descTitle item1">Coordinate AR</div>
+            <div class="grid-item item2">
+                <h3 class="workTitle">Goal of Project</h3>
+                <p class="workDesc">The objective of this study is to determine how levels of embodiment might affect learning on two different platforms.</p>
+            </div>
+            <div class="grid-item item3">
+                <h3 class="workTitle">Project Team</h3>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames workDesc"><a href="https://aashiqshaikh.com/" target="_blank">Aashiq Shaikh</a>, <a href="https://ldnguyen.com/" target="_blank"> Linda Nguyen</a>, <a href="https://www.alirezabahremand.com/" target="_blank"> Alireza Bahremand</a>, Hannah Bartolomea, Frank Liu, Van Nguyen, Derrick Anderson, <a href="https://isearch.asu.edu/profile/3025945" target="_blank"> Robert LiKamWa</a></p>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <h3 class="workTitle">My Role</h3>
+                <p class="workDesc">I worked with a lead designer to design the UI of a VR application, created marketing materials, and collected location-based data.</p>
+            </div>
+            <div class="grid-item item5">
+                <h3 class="workTitle">Project Outcome</h3>
+                <p>We are currently using Coordinate to visualize university partners in industry in the local area. Coordinate can also provide a software solution for city planners to communicate location-based data in an easy-to-understand way.</p>
+            </div>
+            <div class="grid-item item6">
+                <img class="descImage" src="../images/coordinate/1.png" alt="Coordinate AR graph" />
+            </div>
+            <div class="grid-item item7">
+                <img class="descImage" src="../images/coordinate/2.png" alt="Coordinate AR filtering" />
+            </div>
+            <div class="grid-item item8">
+                <img class="descImage" src="../images/coordinate/3.png" alt="Coordinate AR" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <span class="sideText sideTextA"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></span>
+            <span class="midText" style="margin: 0 5vw 0 0">Student</span><span class="midText" style="margin: 0 0 0 0">Designer</span><span class="midText" style="margin: 0 0 0 5vw">Developer</span>
+            <span class="sideText sideTextB"><a target="_blank" href="mailto: hbartolo@asu.edu">hbartolo@asu.edu </a></span>
+            <div class="center">
+                <span><a target="_blank" href="https://www.facebook.com/hannah.bartolomea/"><img class="footerImage" src="../images/facebook.png" /></a><a target="_blank" href="https://www.instagram.com/hannahbartolomea/"><img class="footerImage" src="../images/instagram.png" /></a><a target="_blank" href="https://www.linkedin.com/in/hannah-bartolomea-128579173/"><img class="footerImage" src="../images/linkedin.png" /></a><a target="_blank" href="mailto: hbartolo@asu.edu"><img class="footerImage" src="../images/gmail.png" /></a></span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script></script>
+
+
+    <script>
+        function showCovid() {
+            var x = document.getElementById("covidDetail");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        function showMeteor() {
+            var x = document.getElementById("meteorDetail");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        function showJmars() {
+            var x = document.getElementById("jmarsDetail");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        function showEgl() {
+            var x = document.getElementById("eglDetail");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        function showCoordinate() {
+            var x = document.getElementById("coordinateDetail");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        function showNav() {
+            var x = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }
+            /*function navButton(x) {
+                x.classList.toggle("change");
+            }*/
+
+        </script>
+
+
+
+
+</body>
+</html>

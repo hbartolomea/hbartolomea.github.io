@@ -1,0 +1,104 @@
+﻿.carousel-wrapper {
+    height: 100%;
+    width: 40vw;
+    margin: 5vw auto 0 auto;
+    text-align: center;
+}
+
+.carousel-item {
+    text-align: center;
+    position: absolute;
+    border-radius: 0.5vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    vertical-align: top;
+    text-align: center;
+    width: 40vw;
+    height: 20vw;
+}
+
+.arrow {
+    border: 0.2vw solid #DDDDDD;
+    border-width: 0 0.2vw 0.2vw 0;
+    display: inline-block;
+    padding: 1vw;
+}
+
+.arrow-prev {
+    left: -16vw;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: -16vw;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 35vw;
+        background-position: 10px 50%;
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+*:target ~ .item-4 {
+    opacity: 0;
+}
+
+#item-4:target ~ .item-4 {
+    opacity: 1;
+}
+
+#item-5:target ~ .item-5, #item-6:target ~ .item-6 {
+    z-index: 3;
+    opacity: 1;
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+*:target ~ .item-7 {
+    opacity: 0;
+}
+
+#item-7:target ~ .item-7 {
+    opacity: 1;
+}
+
+#item-8:target ~ .item-8, #item-9:target ~ .item-9 {
+    z-index: 3;
+    opacity: 1;
+}

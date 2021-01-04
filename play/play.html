@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hannah's play</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I am Hannah, a UX/UI designer whose top three passions are art, music, and traveling. All three of these outside passions push me to work even harder as a UX/UI designer.">
+    <link rel='stylesheet' href='../css/style.css' />
+    <link rel='stylesheet' href='../css/carousel.css' />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet' />
+
+    <style>
+        .projectDesc {
+            text-align: center;
+            color: #868686;
+            margin: 0;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-size: 1.3vw;
+            font-weight: 600;
+            margin: 0 10vw 1vw 10vw;
+        }
+
+        /* Carousel */
+        .item-1 {
+            z-index: 2;
+            opacity: 1;
+            background: url("../images/play/art.JPG");
+            background-size: cover;
+        }
+
+        .item-2 {
+            background: url("../images/play/artist.png");
+            background-size: cover;
+            object-position: top;
+        }
+
+        .item-3 {
+            background: url("../images/play/santaCroce.jpg");
+            background-size: cover;
+        }
+
+        .item-4 {
+            z-index: 2;
+            opacity: 1;
+            background: url("../images/play/cruise.jpg");
+            background-size: cover;
+            /*background-position-y: -10vw;*/
+        }
+
+        .item-5 {
+            background: url("../images/play/coldplay.png");
+            background-size: cover;
+        }
+
+        .item-6 {
+            background: url("../images/play/davis.png");
+            background-size: cover;
+        }
+
+        .item-7 {
+            z-index: 2;
+            opacity: 1;
+            background: url("../images/play/lucerne.jpg");
+            background-size: cover;
+            background-position-y: -5vw;
+        }
+
+        .item-8 {
+            background: url("../images/play/flo.png");
+            background-size: cover;
+        }
+
+        .item-9 {
+            background: url("../images/play/chef.png");
+            background-size: cover;
+        }
+
+        .flex-container {
+            height: 45vw;
+        }
+
+            .flex-container > div {
+                width: 80vw;
+                height: 40vw;
+            }
+    </style>
+
+</head>
+
+
+
+<body>
+    <!--Header-->
+
+    <div class="hero-image">
+        <div class="mobileNav">
+            <div class="x-container" onclick="showNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!--<button onclick="showNav()" class="navButton">X</button>-->
+            <div id="nav" style="display: none;">
+                <nav>
+                    <ul>
+                        <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                        <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                        <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                        <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="desktopNav">
+            <nav>
+                <ul>
+                    <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                    <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                    <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                    <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header>Play</header>
+    </div>
+
+
+    <!--Art-->
+    <h2>Art</h2>
+    <div class="flex-container">
+        <div>
+            <!--Carousel-->
+            <div class="carousel-wrapper">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                <div class="carousel-item item-1">
+                    <a class="arrow arrow-prev" href="#item-3"></a>
+                    <a class="arrow arrow-next" href="#item-2"></a>
+                    <div class="text-container">
+                        <!--<h3 class="center">Florence</h3>-->
+                        <p class="center playText">I have always been happiest when I am utilizing my creative outlet and bringing new aristic pieces to life. My heart is full when I am crafting anything from an innovative prototype to a transformed jacket.</p>
+                    </div>
+                </div>
+                <div class="carousel-item item-2">
+                    <a class="arrow arrow-prev" href="#item-1"></a>
+                    <a class="arrow arrow-next" href="#item-3"></a>
+                    <div class="text-container">
+                        <!--<h3 class="center">CopenHOWn</h3>-->
+                        <p class="center playText">While studying in Florence, I got the opportunity to learn artistic techniques from professionals and realized after being the top of my class of advanced art students, that I could actually follow this passion as a career path.</p>
+                    </div>
+                </div>
+                <div class="carousel-item item-3">
+                    <a class="arrow arrow-prev" href="#item-2"></a>
+                    <a class="arrow arrow-next" href="#item-1"></a>
+                    <div class="text-container">
+                        <!--<h3 class="center">Amsterdamn</h3>-->
+                        <p class="center playText">Returning to school at ASU, I was determined to find a way to implement my artistic passsion, and now skill, into my work as a designer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Music-->
+    <h2>Music</h2>
+    <div class="flex-container">
+        <div>
+            <div class="center">
+                <!--Carousel-->
+                <div>
+                    <div class="carousel-wrapper">
+                        <span id="item-4"></span>
+                        <span id="item-5"></span>
+                        <span id="item-6"></span>
+                        <div class="carousel-item item-4">
+                            <a class="arrow arrow-prev" href="#item-6"></a>
+                            <a class="arrow arrow-next" href="#item-5"></a>
+                            <div class="text-container">
+                                <!--<h3 class="center">Florence</h3>-->
+                                <p class="center playText">Music has always been an important part of my life. I live in a family of musicians and it has always allowed us to connect on a deeper level and grow from eachother's diverse persepectives on music.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item item-5">
+                            <a class="arrow arrow-prev" href="#item-4"></a>
+                            <a class="arrow arrow-next" href="#item-6"></a>
+                            <div class="text-container">
+                                <!--<h3 class="center">CopenHOWn</h3>-->
+                                <p class="center playText">The coolest thing about music, to me, is the profound effect that it can have on a person. A single song is able to drastically change a person's mood or perspective on a situaiton, in a way that simple words could never accomplish.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item item-6">
+                            <a class="arrow arrow-prev" href="#item-5"></a>
+                            <a class="arrow arrow-next" href="#item-4"></a>
+                            <div class="text-container">
+                                <!--<h3 class="center">Amsterdamn</h3>-->
+                                <p class="center playText">Because music has always been the easiest form of art for me to connect with, music showed me the power of art and it's affect on people. Music opened up a door for me to understand the impact of all art.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Travel-->
+    <h2>Travel</h2>
+    <div class="flex-container">
+        <div>
+            <div class="center">
+                <!--Carousel-->
+                <div>
+                    <div class="carousel-wrapper">
+                        <span id="item-7">
+                        </span>
+                        <span id="item-8"></span>
+                        <span id="item-9"></span>
+                        <div class="carousel-item item-7">
+                            <a class="arrow arrow-prev" href="#item-9"></a>
+                            <a class="arrow arrow-next" href="#item-8"></a>
+                            <div class="text-container">
+                                <!--<h3 class="center">Venice</h3>-->
+                                <p class="center playText">I have always been fascinated with learning different cultures and points of views. I think that traveling is the best opportunity to do so, and an important part of the human experience.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item item-8">
+                            <a class="arrow arrow-prev" href="#item-7"></a>
+                            <a class="arrow arrow-next" href="#item-9"></a>
+                            <div class="text-container">
+                                <!--<h3 class="center">Copenhagen</h3>-->
+                                <p class="center playText">Living in Italy for four months has really opened my eyes to understanding how diverse people in this big world can be. I now understand that just because something seems like a fact to me, does not mean that it is true for everyone.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item item-9">
+                            <a class="arrow arrow-prev" href="#item-8"></a>
+                            <a class="arrow arrow-next" href="#item-7"></a>
+                            <div class="text-container">
+                                <!--<h3 class="center">Amsterdamn</h3>-->
+                                <p class="center playText">
+                                    My favorite thing about Italian culture is that they work to live, where it seems like most people in Western culture live to work. In Italy people work as much as they need
+                                    to have enough for basic human needs. I am a very dedicated worker and it would be hard for me to not be the best at what I do. But, I learned from this that if I am going to put so much into my work I need to be doing something that I truly love.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <span class="sideText sideTextA"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></span>
+            <span class="midText" style="margin: 0 5vw 0 0">Student</span><span class="midText" style="margin: 0 0 0 0">Designer</span><span class="midText" style="margin: 0 0 0 5vw">Developer</span>
+            <span class="sideText sideTextB"><a target="_blank" href="mailto: hbartolo@asu.edu">hbartolo@asu.edu </a></span>
+            <div class="center">
+                <span><a target="_blank" href="https://www.facebook.com/hannah.bartolomea/"><img class="footerImage" src="../images/facebook.png" /></a><a target="_blank" href="https://www.instagram.com/hannahbartolomea/"><img class="footerImage" src="../images/instagram.png" /></a><a target="_blank" href="https://www.linkedin.com/in/hannah-bartolomea-128579173/"><img class="footerImage" src="../images/linkedin.png" /></a><a target="_blank" href="mailto: hbartolo@asu.edu"><img class="footerImage" src="../images/gmail.png" /></a></span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>function navButton(x) {
+            x.classList.toggle("change");
+        }
+        function showNav() {
+            var x = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }</script>
+
+
+
+
+</body>
+</html>

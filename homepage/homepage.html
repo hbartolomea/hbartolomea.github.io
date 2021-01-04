@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hannah Bartolomea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I am Hannah Bartolomea, a UX/UI designer and student at Arizona State University. Explore my website portfolio to learn more about my professional work and personal interests.">
+    <link rel='stylesheet' href='../css/style.css' />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+
+    <style>
+        /*WAVES HEADER */
+
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+
+        .hero-image {
+            height: 30vw;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) -69.85%, rgba(255, 255, 255, 0) 100%), linear-gradient(64.01deg, #C4006C 5.82%, #FF002F 59.5%, #FF5F01 83.57%, #FFD951 99.28%);
+        }
+
+        @media only screen and (max-width: 425px) {
+            .hero-image {
+                height: 40vw !important;
+            }
+        }
+
+        .inner-header {
+            width: 100%;
+            margin: 0 0 0 0;
+            padding: 3% 0 0 0;
+        }
+
+        .waves {
+            position: relative;
+            bottom: 5vw;
+            width: 100%;
+            height: 5vw; /*Fix for safari gap
+            min-height: 100px;
+            max-height: 150px;*/
+        }
+
+        .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+        /* Animation */
+        .parallax > use {
+            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+
+            .parallax > use:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+
+            .parallax > use:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+
+            .parallax > use:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+
+            .parallax > use:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(85px, 0, 0);
+            }
+        }
+        /*Shrinking for mobile*/
+        @media (max-width: 768px) {
+            .waves {
+                /*height: 5.208vw;
+                min-height: 5.208vw;*/
+            }
+
+            .content {
+                height: 30vh;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        /* HEADER TEXT */
+        body {
+            color: #000;
+        }
+
+        .header-wrapper {
+            margin: 0% 8% 0 8%;
+            text-align: left;
+            display: inline-block;
+            width: 100vw;
+        }
+
+        h1 {
+            color: white;
+            font-size: 6.5vw;
+            line-height: 1;
+            display: inline-block;
+            height: 7vw;
+            overflow: hidden;
+            font-size: 3vw;
+            /*margin: 0 4px 0 0;*/
+        }
+
+            h1 span.wrapper {
+                display: block;
+                animation: animate-header ease-in-out 4s;
+                animation-fill-mode: forwards;
+            }
+
+            h1 span.word {
+                display: block;
+                margin: 0 0 0.7vw 0;
+            }
+
+        @media only screen and (max-width: 4000px) {
+            h1 span.word {
+                margin: 0 0 1.15vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 6.5vw;
+            }
+        }
+
+        @media only screen and (max-width: 1600px) {
+            h1 span.word {
+                margin: 0 0 0.66vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 7vw;
+            }
+        }
+
+        /*/@media only screen and (max-width: 1450px) {
+            h1 span.word {
+                margin: 0 0 1.65vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 6vw;
+            }
+        }*/
+
+        /*@media only screen and (max-width: 1450px) {
+            h1 span.word {
+                margin: 0 0 1.71vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 6vw;
+            }
+        }*/
+
+        @media only screen and (max-width: 770px) {
+            h1 span.word {
+                margin: 0 0 1.69vw 0;
+            }
+
+            #line3, #line1, #line {
+                font-size: 6vw;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            h1 span.word {
+                margin: 0 0 1.75vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 6vw;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            h1 span.word {
+                margin: 0 0 1.8vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 6vw;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            h1 span.word {
+                margin: 0 0 1.72vw 0;
+            }
+
+            #line3, #line1 {
+                font-size: 6vw;
+            }
+        }
+
+        h1 span.word.a {
+            color: #fff;
+        }
+
+        h1 span.word.b {
+            color: #fff;
+        }
+
+        h1 span.word.c {
+            color: #fff;
+        }
+
+        h1 span.word.d {
+            color: #fff;
+        }
+
+        h1 span.word.e {
+            color: #fff;
+        }
+
+        h1 span.word.f {
+            color: #fff;
+        }
+
+        h1 span.word.g {
+            color: #fff;
+        }
+
+        h1 span.word.h {
+            color: #fff;
+        }
+
+        h1 span.word.i {
+            color: #fff;
+        }
+
+        h1 span.word.j {
+            color: #fff;
+        }
+
+        h1 span.word.k {
+            color: #fff;
+        }
+
+        h1 span.word.l {
+            color: #fff;
+        }
+
+        h1 span.word.m {
+            color: #fff;
+        }
+
+        h1 span.word.n {
+            color: #fff;
+        }
+
+        h1 span.word.o {
+            color: #fff;
+        }
+
+        h1 span.word.p {
+            color: #fff;
+        }
+
+        h1 span.word.q {
+            color: #fff;
+        }
+
+        h1 span.word.end {
+            color: #00FFF0;
+        }
+
+        @keyframes animate-header {
+            0% {
+                margin: 0.5vw 0 0 0;
+            }
+
+            20% {
+                margin: 0.5vw 0 0 0;
+            }
+
+            30% {
+                margin: -7vw 0 0 0;
+            }
+
+            39% {
+                margin: -15vw 0 0 0;
+            }
+
+            47% {
+                margin: -23vw 0 0 0;
+            }
+
+            54% {
+                margin: -31vw 0 0 0;
+            }
+
+            60% {
+                margin: -39vw 0 0 0;
+            }
+
+            65% {
+                margin: -47vw 0 0 0;
+            }
+
+            69% {
+                margin: -55vw 0 0 0;
+            }
+
+            73% {
+                margin: -63vw 0 0 0;
+            }
+
+            77% {
+                margin: -71vw 0 0 0;
+            }
+
+            80% {
+                margin: -79vw 0 0 0;
+            }
+
+            83% {
+                margin: -87vw 0 0 0;
+            }
+
+            86% {
+                margin: -95vw 0 0 0;
+            }
+
+            89% {
+                margin: -103vw 0 0 0;
+            }
+
+            92% {
+                margin: -111vw 0 0 0;
+            }
+
+            95% {
+                margin: -119vw 0 0 0;
+            }
+
+            98% {
+                margin: -129.5vw 0 0 0;
+            }
+
+            100% {
+                margin: -129.5vw 0 0 0;
+            }
+        }
+
+        .flex-container-L2 {
+            display: flex;
+            flex-direction: column;
+            transform: translate(-20vw, 2vw);
+            height: 7vw;
+            width: 8vw;
+            align-content: stretch;
+            margin-left: 22vw;
+            padding: 0.5vw 0.5vw;
+        }
+
+        p.stretch1 {
+            display: inline-block;
+            -webkit-transform: scale(5,0.9); /* Safari and Chrome */
+            -moz-transform: scale(5,1); /* Firefox */
+            -ms-transform: scale(5,1); /* IE 9 */
+            -o-transform: scale(5,1); /* Opera */
+            transform: scale(1.8,1.1); /* W3C */
+        }
+
+        p.stretch2 {
+            display: inline-block;
+            -webkit-transform: scale(5,0.9); /* Safari and Chrome */
+            -moz-transform: scale(5,1); /* Firefox */
+            -ms-transform: scale(5,1); /* IE 9 */
+            -o-transform: scale(5,1); /* Opera */
+            transform: scale(1.8,1.1); /* W3C */
+        }
+
+        p.stretch3 {
+            display: inline-block;
+            -webkit-transform: scale(5,0.9); /* Safari and Chrome */
+            -moz-transform: scale(5,1); /* Firefox */
+            -ms-transform: scale(5,1); /* IE 9 */
+            -o-transform: scale(5,1); /* Opera */
+            transform: scale(5,1.2); /* W3C */
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!--Header-->
+    <div class="header-container">
+        <div class="hero-image">
+
+
+            <div class="mobileNav">
+                <div class="x-container" onclick="showNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <!--<button onclick="showNav()" class="navButton">X</button>-->
+                <div id="nav" style="display: none;">
+                    <nav>
+                        <ul>
+                            <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                            <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                            <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                            <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="desktopNav">
+                <nav>
+                    <ul>
+                        <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                        <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                        <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                        <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--<div style="display: none;">
+
+                <nav>
+                    <ul>
+                        <li class="rightNav"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></li>
+                        <li class="leftNav"><a href='../about/about.html'>about</a></li>
+                        <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
+                        <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                    </ul>
+                </nav>
+            </div>-->
+            <!--Content before waves-->
+
+            <div class="inner-header flex">
+                <div class="header-wrapper">
+                    <h1 id="line1">Hi, I'm a</h1>
+                    <h1 id="line3">
+                        <span class="wrapper">
+                            <span class="word a">Artist</span>
+                            <span class="word b">Graphic Designer</span>
+                            <span class="word c">Friend</span>
+                            <span class="word d">Student</span>
+                            <span class="word e">Leader</span>
+                            <span class="word f">Traveler</span>
+                            <span class="word g">Athelete</span>
+                            <span class="word h">Daughter</span>
+                            <span class="word i">Game Designer</span>
+                            <span class="word j">Teammate</span>
+                            <span class="word k">Leader</span>
+                            <span class="word l">Hiker</span>
+                            <span class="word m">Sister</span>
+                            <span class="word n">Music Lover</span>
+                            <span class="word o">Video Editor</span>
+                            <span class="word p">Joker</span>
+                            <span class="word q">Chef</span>
+                            <span class="word end">UX/UI Designer,</span>
+                        </span>
+                    </h1>
+                </div>
+            </div>
+            <div>
+                <!--<h1 style="margin: 0 0 0 8%;">-->
+                <h1 class="header-wrapper">
+                    <span id="line2">but everyone calls me</span>
+                    <span id="line1">Hannah.</span>
+                </h1>
+            </div>
+        </div>
+
+
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,1.0)" />
+                </g>
+            </svg>
+            <!--Waves end-->
+        </div>
+    </div>
+
+
+    <!--Recent Work-->
+    <h2>My Recent Work:</h2>
+
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a href="https://xr.asu.edu/jmars" target="_blank"><img class="iphonePic" src="../images/jmars/jmarsHome.png" alt="jmars"/></a>
+            </div>
+            <div style="align-self: center;">
+                <h3 class="projectName" style="text-transform: uppercase;">JMARS AR</h3>
+                <p class="projectName">Explore any planetary terrain, from your living room! Prepare terrains in JMARS and export a QR code to view your terrain in AR. Take a screenshot to share your terrain and QR code.</p>
+                <a href="../projectPages/jmars.html">
+                    <button class="button button1">Project Page</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a target="_blank" href="https://xr.asu.edu/covidcampus"><img class="projectPic" src="../images/covid/covidHome.png" alt="Covid Campus Simulation"/></a>
+            </div>
+            <div>
+                <h3 class="projectName" style="text-transform: uppercase;">Covid Campus Simulation</h3>
+                <p class="projectName">Experience how eight key decisions throughout the day change your probability of infection from the COVID-19 virus and learn how you can  prevent the spread of COVID-19 on campus. </p>
+                <a href="../projectPages/covid.html">
+                    <button class="button button1">Project Page</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-container1">
+            <div>
+                <a target="_blank" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9155155"><img class="projectPic" src="../images/CAM/catchAMimicHome.png" alt="Platform is not Destiny"/></a>
+            </div>
+            <div>
+                <h3 class="projectName" style="">Embodied Agentic STEM Education: Effects of 3D VR Compared to 2D PC</h3>
+                <p class="projectName">
+                    This randomized control trial determined how two levels of embodiment (low versus high) and platform (2D PC versus 3D Virtual Reality) affected learning in an interactive game about Batesian Mimicry.
+                </p>
+                <a href="../projectPages/eglPaper.html">
+                    <button class="button button1">Project Page</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <span class="sideText sideTextA"><a class="navLink" href='../homepage/homepage.html'>Hannah Bartolomea</a></span>
+            <span class="midText" style="margin: 0 5vw 0 0">Student</span><span class="midText" style="margin: 0 0 0 0">Designer</span><span class="midText" style="margin: 0 0 0 5vw">Developer</span>
+            <span class="sideText sideTextB"><a target="_blank" href="mailto: hbartolo@asu.edu">hbartolo@asu.edu </a></span>
+            <div class="center">
+                <span><a target="_blank" href="https://www.facebook.com/hannah.bartolomea/"><img class="footerImage" src="../images/facebook.png" /></a><a target="_blank" href="https://www.instagram.com/hannahbartolomea/"><img class="footerImage" src="../images/instagram.png" /></a><a target="_blank" href="https://www.linkedin.com/in/hannah-bartolomea-128579173/"><img class="footerImage" src="../images/linkedin.png" /></a><a target="_blank" href="mailto: hbartolo@asu.edu"><img class="footerImage" src="../images/gmail.png" /></a></span>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>function navButton(x) {
+            x.classList.toggle("change");
+        }
+        function showNav() {
+            var x = document.getElementById("nav");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+
+            else {
+                x.style.display = "none";
+            }
+        }</script>
+
+
+
+
+</body>
+</html>
