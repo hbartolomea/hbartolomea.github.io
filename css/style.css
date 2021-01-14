@@ -23,7 +23,8 @@ h2 {
     font-family: 'Rubik';
     font-weight: 900;
     font-size: 3vw;
-    color: #D2247B;
+    color: #FF9237;
+    /*    color: #D2247B;*/
     margin: 5% 5% 1% 10%;
 }
 
@@ -97,7 +98,7 @@ footer {
 }
 
     .sideText a:hover {
-        color: #D2247B;
+        color: #FF9237;
     }
 
 @media only screen and (max-width: 425px) {
@@ -113,12 +114,21 @@ footer {
 
 /*HEADER*/
 .hero-image {
-    background-image: url("workHeader.png");
+    /*    background-image: url("workHeader.png");*/
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) -69.85%, rgba(255, 255, 255, 0) 100%), linear-gradient(55deg, #C4006C 2%, #FF002F 25%, #FF5F01 70%, #FFD951 99%);
     height: 30vw;
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 0;
+}
+.wave {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 15vw;
+    height: 15vw;
 }
 
 #line1 {
@@ -167,6 +177,13 @@ footer {
     .hero-image {
         height: 33vw;
     }
+    .wave {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 20vw;
+        height: 15vw;
+    }
 }
 
 
@@ -189,7 +206,7 @@ ul {
 }
 
 li {
-    margin: 2%;
+    margin: 2% 3%;
     font-family: Frank Ruhl Libre;
     font-size: 1.5vw;
     font-weight: 900;
@@ -233,19 +250,19 @@ li a:hover {
     cursor: pointer;
     border-radius: 10vw;
     float: right;
-    border: 0vw solid #D2247B;
+    border: 0vw solid #FF9237;
 }
 
 .navButton1 {
     background-color: rgba(0,0,0,0);
-    color: #D2247B;
-    border: 0vw solid #D2247B;
+    color: #FF9237;
+    border: 0vw solid #FF9237;
 }
 
 .navButton:hover {
     background-color: rgba(0,0,0,0);
-    border: 0vw solid #D2247B;
-    color: #D2247B;
+    border: 0vw solid #FF9237;
+    color: #FF9237;
 }
 
 @media only screen and (max-width: 425px) {
@@ -271,15 +288,16 @@ li a:hover {
 
     li {
         text-align: center;
-        margin: 1%;
+        margin: 2%;
         font-size: 2vw;
-        color: #D2247B !important;
+        color: #FF9237 !important;
     }
     /*    .header-container {
         height: 40vw;
     }*/
     .rightNav {
         float: none;
+        
     }
 
     .leftNav {
@@ -327,7 +345,7 @@ li a:hover {
 /*BUTTON*/
 .button {
     background-color: white;
-    color: #D2247B;
+    color: #FFA152;
     padding: 0.7vw 0.7vw;
     width: 35%;
     font-family: 'Rubik';
@@ -341,27 +359,27 @@ li a:hover {
 }
 
 .button1 {
-    background-color: white;
-    color: #D2247B;
-    border: 0.2vw solid #D2247B;
+    background-color: #FFA152;
+    color: white;
+    border: 0.2vw solid #FF9237;
 }
 
 .button:hover {
-    background-color: #D2247B;
-    border: 0.2vw solid #D2247B;
-    color: white;
+    background-color: white;
+    border: 0.2vw solid #FF9237;
+    color: #FF9237;
 }
 
 .button2 {
-    background-color: #D2247B;
+    background-color: #FF9237;
     color: white;
-    border: 0.2vw solid white;
+    border: 0.2vw solid #FF9237;
 }
 
     .button2:hover {
         background-color: white;
-        color: #D2247B;
-        border: 0.2vw solid #D2247B;
+        color: #FF9237;
+        border: 0.2vw solid #FF9237;
     }
 
 @media only screen and (max-width: 425px) {
@@ -567,7 +585,7 @@ li a:hover {
 }
 
     .flex-container > div {
-        border: 0.15vw solid #DDDDDD;
+        border: 0.15vw solid #dddddd;
         color: black;
         width: 90vw;
         height: 60vw;
@@ -638,7 +656,7 @@ li a:hover {
     font-family: 'Rubik';
     font-weight: 900;
     font-size: 1vw;
-    color: #D2247B;
+    color: #FFA152;
     margin: 0;
     text-align: center;
 }
@@ -678,7 +696,7 @@ li a:hover {
 .submit {
     display: block;
     background-color: white;
-    color: #D2247B;
+    color: #FFA152;
     padding: 0.7vw 0.7vw;
     width: 37.5%;
     font-family: 'Rubik';
@@ -692,15 +710,15 @@ li a:hover {
 
 .submit1 {
     font-size: 1.7vw;
-    background-color: white;
-    color: #D2247B;
-    border: 0.2vw solid #D2247B;
+    background-color: #FFA152;
+    color: white;
+    border: 0.2vw solid #FFA152;
 }
 
 .submit:hover {
-    background-color: #D2247B;
-    border: 3px solid #D2247B;
-    color: white;
+    background-color: white;
+    border: 3px solid #FFA152;
+    color: #FFA152;
 }
 
 .contactText {
@@ -791,7 +809,7 @@ textarea, input {
 }
 
     input:focus, textarea:focus {
-        border: 0.5vw solid #D2247B;
+        border: 0.5vw solid #FFA152;
         color: black;
     }
 
@@ -832,7 +850,7 @@ th {
 }
 
     #t02 .tableHeader-H {
-        color: #D2247B !important;
+        color: #FFA152 !important;
         font-size: 1.5vw !important;
         margin-bottom: -1vw !important;
     }

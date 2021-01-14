@@ -28,13 +28,15 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
+                <!--<button onclick="showNav()" class="navButton">X</button>-->
                 <div id="nav" style="display: none;">
                     <nav>
                         <ul>
                             <li class="rightNav"><a class="navLink" href='../index.html'>Hannah Bartolomea</a></li>
-                            <li class="leftNav"><a href='../about/about.html'>about</a></li>
-                            <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
-                            <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+
+                            <!--<li class="leftNav"><a class="navLink" href='play/play.html'>play</a></li>-->
+                            <li class="leftNav"><a class="navLink" href='../work/work.html'>Work</a></li>
+                            <li class="leftNav"><a href='../about/about.html'>About Me</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,14 +45,18 @@
                 <nav>
                     <ul>
                         <li class="rightNav"><a class="navLink" href='../index.html'>Hannah Bartolomea</a></li>
-                        <li class="leftNav"><a href='../about/about.html'>about</a></li>
-                        <li class="leftNav"><a class="navLink" href='../play/play.html'>play</a></li>
-                        <li class="leftNav"><a class="navLink" href='../work/work.html'>work</a></li>
+                        <li class="leftNav"><a href='../about/about.html'>About Me</a></li>
+                        <li class="leftNav"><a class="navLink" href='../work/work.html'>Work</a></li>
+                        <!--<li class="leftNav"><a class="navLink" href='play/play.html'>play</a></li>-->
+
                     </ul>
                 </nav>
             </div>
             <header>Work</header>
         </div>
+    </div>
+    <div>
+       <img class="wave" src="../images/wave.png" />
     </div>
 
     <!--Recent Work-->
@@ -64,7 +70,7 @@
             <div>
                 <h3 class="projectName" style="text-transform: uppercase;">Covid Campus Simulation</h3>
                 <p class="projectName">Experience how eight key decisions throughout the day change your probability of infection from the COVID-19 virus and learn how you can  prevent the spread of COVID-19 on campus. </p>
-                <span><button onclick="showCovid()" class="button button1" style="margin: 0 1vw 0 5vw;">Show More</button></span>
+                <span><button onclick="showCovid()" class="button button1" style="margin: 0 1vw 0 5vw;">More Info</button></span>
                 <a href="../projectPages/covid.html">
                     <span><button class="button button2" style="margin: 0 5vw 0 1vw;">Project Page</button></span>
                 </a>
@@ -87,17 +93,24 @@
             </div>
             <div class="grid-item item4">
                 <h3 class="workTitle">My Role</h3>
-                <p class="workDesc">I worked alongside my team to develop a story for the experience, I was also the lead user interface designer and I communicated with a professional UX designer to ensure optimized results.</p>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames"><span class="nameDesc">Develop narrative</p>
+                    <p class="teamNames"><span class="nameDesc">Meet with epidemiologists</p>
+                    <p class="teamNames"><span class="nameDesc">Communicate directly with client</p>
+                    <p class="teamNames"><span class="nameDesc">Low-fidelity wireframes and high-fidelity prototypes</p>
+                    <p class="teamNames"><span class="nameDesc">User observations</p>
+                    <p class="teamNames"><span class="nameDesc">Create trailer video</p>
+                </div>
             </div>
             <div class="grid-item item5">
                 <h3 class="workTitle">Project Outcome</h3>
-                <p class="teamNames" style="margin: 2vw 5vw;">The simulation is presented on the <a href="https://xr.asu.edu/" target="_blank">XR@ASU website</a>as a way for students to stay safe on campus.</p>
+                <p class="teamNames" style="margin: 2vw 5vw;">The simulation is presented on the <a href="https://xr.asu.edu/" target="_blank">XR@ASU website</a> as a way for students to stay safe on campus.</p>
             </div>
             <div class="grid-item item6">
-                <img class="descImage" src="../images/covid/covidChoice.png" alt="Covid Campus Simulation mask"/>
+                <img class="descImage" src="../images/covid/covidChoice.png" alt="Covid Campus Simulation mask" />
             </div>
             <div class="grid-item item7">
-                <img class="descImage" src="../images/covid/covidProb.png" alt="Covid Campus Simualtion probability of infection"/>
+                <img class="descImage" src="../images/covid/covidProb.png" alt="Covid Campus Simualtion probability of infection" />
             </div>
             <div class="grid-item item8">
                 <img class="descImage" src="../images/covid/covidDrag.png" alt="Covid Campus Simualtion feedback" />
@@ -116,7 +129,7 @@
                 <h3 class="projectName" style="text-transform: uppercase;">JMARS AR</h3>
                 <p class="projectName">Explore any planetary terrain, from your living room! Prepare terrains in JMARS and export a QR code to view your terrain in AR. Take a screenshot to share your terrain and QR code.</p>
                 <!--<button onclick="showJmars()" class="button button1">Show More</button>-->
-                <span><button onclick="showJmars()" class="button button1" style="margin: 0 1vw 0 5vw;">Show More</button></span>
+                <span><button onclick="showJmars()" class="button button1" style="margin: 0 1vw 0 5vw;">More Info</button></span>
                 <a href="../projectPages/jmars.html">
                     <span><button class="button button2" style="margin: 0 5vw 0 1vw;">Project Page</button></span>
                 </a>
@@ -142,7 +155,16 @@
             </div>
             <div class="grid-item item4">
                 <h3 class="workTitle">My Role</h3>
-                <p class="workDesc">I was responsible for creating a pattern library, creating a prototype and implementing the design, and iterating design based on user studies.</p>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames"><span class="nameDesc">Low-fidelity wireframes</p>
+                    <p class="teamNames"><span class="nameDesc">High-fidelity prototypes</p>
+                    <p class="teamNames"><span class="nameDesc">Front-end development</p>
+                    <p class="teamNames"><span class="nameDesc">User observations</p>
+                    <p class="teamNames"><span class="nameDesc">Continuous iteration</p>
+                    <p class="teamNames"><span class="nameDesc">Create trailer video</p>
+                    <p class="teamNames"><span class="nameDesc">Design project webiste</p>
+                </div>
+                <!--<p class="workDesc">I was responsible for creating a pattern library, creating a prototype and implementing the design, and iterating design based on user studies.</p>-->
             </div>
             <div class="grid-item item5">
                 <h3 class="workTitle">Project Outcome</h3>
@@ -173,7 +195,7 @@
             <div>
                 <h3 class="projectName" style="text-transform: uppercase;">Meteor Studio Website</h3>
                 <p class="projectName">This website is designed to showcase Meteor Studio, an engineering research labratory at Arizona State University.</p>
-                <button onclick="showMeteor()" class="button button1">Show More</button>
+                <button onclick="showMeteor()" class="button button1">More Info</button>
             </div>
         </div>
     </div>
@@ -192,7 +214,16 @@
             </div>
             <div class="grid-item item4">
                 <h3 class="workTitle">My Role</h3>
-                <p class="workDesc">I was responsible for filling content of the website and making it responsive to different screen sizes.</p>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames"><span class="nameDesc">Design UI mock-up</p>
+                    <p class="teamNames"><span class="nameDesc">Implement design using HTML/CSS/JavaScript</p>
+                    <p class="teamNames"><span class="nameDesc">Front-end development</p>
+                    <p class="teamNames"><span class="nameDesc">Create graphic design assets</p>
+                    <p class="teamNames"><span class="nameDesc">Collect user reviews</p>
+                    <p class="teamNames"><span class="nameDesc">Gather interdepartmental materials</p>
+                    <p class="teamNames"><span class="nameDesc">Continuous iteration</p>
+                </div>
+                <!--<p class="workDesc">I was responsible for filling content of the website and making it responsive to different screen sizes.</p>-->
             </div>
             <div class="grid-item item5">
                 <h3 class="workTitle">Project Outcome</h3>
@@ -222,7 +253,7 @@
             <div>
                 <h3 class="projectName" style="">Embodied Agentic STEM Education: Effects of 3D VR Compared to 2D PC</h3>
                 <p class="projectName">This randomized control trial determined how two levels of embodiment (low versus high) and platform (2D PC versus 3D Virtual Reality) affected learning in an interactive game about Batesian Mimicry.</p>
-                <span><button onclick="showEgl()" class="button button1" style="margin: 0 1vw 0 5vw;">Show More</button></span>
+                <span><button onclick="showEgl()" class="button button1" style="margin: 0 1vw 0 5vw;">More Info</button></span>
                 <a href="../projectPages/eglPaper.html">
                     <span><button class="button button2" style="margin: 0 5vw 0 1vw;">Project Page</button></span>
                 </a>
@@ -244,7 +275,15 @@
             </div>
             <div class="grid-item item4">
                 <h3 class="workTitle">My Role</h3>
-                <p class="workDesc">I worked with my research professor to design 10 item pre, post, and follow up tests. I also was responsible to run over 4 user studies per week and work with the team to synthesize results.</p>
+                <div style="margin: 2vw 5vw;">
+                    <p class="teamNames"><span class="nameDesc">Design research methods</p>
+                    <p class="teamNames"><span class="nameDesc">Create 7-item pre, post and follow-up surveys</p>
+                    <p class="teamNames"><span class="nameDesc">Conduct user studies</p>
+                    <p class="teamNames"><span class="nameDesc">Administer follow-up tests via email</p>
+                    <p class="teamNames"><span class="nameDesc">Code responses</p>
+                    <p class="teamNames"><span class="nameDesc">Analyze data and synthesize results</p>
+                </div>
+                <!--<p class="workDesc">I worked with my research professor to design 10 item pre, post, and follow up tests. I also was responsible to run over 4 user studies per week and work with the team to synthesize results.</p>-->
             </div>
             <div class="grid-item item5">
                 <h3 class="workTitle">Project Outcome</h3>
@@ -272,7 +311,7 @@
             <div style="align-self: center;">
                 <h3 class="projectName" style="text-transform: uppercase;">Coordinate AR</h3>
                 <p class="projectName">Coordinate a spreadsheet-programmable visualization framework for immersive map visualizations through augmented reality (AR) that provides interactive digital information overlays atop physical maps.</p>
-                <button onclick="showCoordinate()" class="button button1">Show More</button>
+                <button onclick="showCoordinate()" class="button button1">More Info</button>
             </div>
         </div>
     </div>

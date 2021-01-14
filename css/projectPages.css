@@ -31,6 +31,20 @@
     margin: 1vw 0 5vw 0;
 }
 
+.challengeText {
+    margin: 2vw 5% 5vw 10%;
+    font-size: 2vw;
+}
+
+
+    .challengeText a:link {
+        color: #D2247B;
+    }
+
+    .challengeText a:visited {
+        color: #D2247B;
+    }
+
 .roleTitle {
     margin: 2vw 0;
 }
@@ -122,7 +136,58 @@
     width: 24%;
     margin: 5vw 2vw 5vw 2vw;
 }
+.flexDesign-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2vw 0;
+}
+.design1Container {
+    width: 38%;
+    margin: 0 2vw 5vw 2vw;
+    align-self: center;
+}
+.cov-design1Image {
+    width: 10vw;
+    margin: 1vw;
+}
+.cov-design2Image {
+    width: 15vw;
+    margin: 1vw;
+}
+.jmar-design1Image {
+    width: 6vw;
+    margin: 0.3vw;
+}
 
+.jmar-design2Image {
+    width: 8vw;
+    margin: 0.8vw;
+}
+.egl-design1Image {
+    width: 25vw;
+    margin: 3vw;
+}
+
+.egl-design2Image {
+    width: 35vw;
+    margin: 0.8vw;
+}
+.paper {
+    border: 0.25vw solid #00FFF0;
+}
+.changes {
+    margin: 0.5vw 0;
+    font-size: 1.15vw !important;
+}
+.numbers {
+    font-size: 1.75vw !important;
+    display: inline-block;
+    line-height: 3.45vw;
+    margin: 0 -0.5vw;
+    position: absolute;
+    color: #FFA152;
+}
 @media only screen and (max-width: 425px) {
     h2 {
         text-align: center;
@@ -146,11 +211,14 @@
         text-align: center;
     }
 
-    .roleText {
+    .roleText, .challengeText {
         text-align: center;
         align-self: center;
         width: 60%;
         margin: auto;
+    }
+    .outcomeText {
+        margin: 1vw auto;
     }
 
     .roleImage {
@@ -169,5 +237,34 @@
         width: 60%;
         margin: 2vw 2vw 5vw 2vw;
         align-self: center;
+    }
+    .design1Container {
+        width: 70%;
+        margin: 0 2vw 5vw 2vw;
+        align-self: center;
+    }
+    .cov-design1Image {
+        width: 20vw;
+    }
+    .cov-design2Image {
+        width: 25vw !important;
+    }
+    .jmar-design1Image {
+        width: 10vw;
+    }
+
+    .jmar-design2Image {
+        width: 13vw !important;
+    }
+    .egl-design1Image {
+        width: 25vw;
+        margin: 1.5vw;
+    }
+
+    .egl-design2Image {
+        width: 35vw !important;
+    }
+    .paper {
+        border: 0.4vw solid #00FFF0;
     }
 }
